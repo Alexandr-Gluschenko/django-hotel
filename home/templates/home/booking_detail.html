@@ -8,13 +8,13 @@
     <div class="card">
         <div class="card-body">
             <p><strong>Guest:</strong> {{ booking.guest }}</p>
-            <p><strong>Room:</strong> {{ booking.room }}</p>
+            <p><strong>Room:</strong> {{ booking.rooms_count }}</p>
             <p><strong>Check in:</strong> {{ booking.check_in }}</p>
             <p><strong>Check out:</strong> {{ booking.check_out }}</p>
             <p><strong>Price per night:</strong> ${{ booking.price_per_night }}</p>
         </div>
     </div>
 
-    <a href="{% url 'booking_list' %}" class="btn btn-secondary mt-3">Back to list</a>
+    <a href="{% url 'hotel:booking_list' %}" class="btn btn-secondary mt-3">Back to list</a>
 </div>
 {% endblock %}

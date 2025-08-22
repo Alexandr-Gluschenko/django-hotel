@@ -7,7 +7,7 @@
 {% block content %}
 <div class="container mt-4">
     <h1 class="mb-4">Reservations</h1>
-    <a href="{% url 'hotel:booking-list' %}" class="btn btn-primary">View Bookings</a>
+    <a href="{% url 'home:booking_list' %}" class="btn btn-primary">View Bookings</a>
 
     {% if bookings %}
     <table class="table table-striped table-bordered">
